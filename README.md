@@ -1,6 +1,6 @@
 # Coinbase Code Challenge
 
-#####Getting started:  
+##### Getting started:  
 Unzip and `cd` into project directory.
 
 ```
