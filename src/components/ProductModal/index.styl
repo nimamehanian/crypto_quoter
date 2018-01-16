@@ -1,0 +1,46 @@
+.product-modal
+  background #fff
+  width 230px
+  position absolute
+  top 45px
+  left 0px
+  padding 16px 0px
+  cursor pointer
+  border-top 1px solid #d0d3d5
+  border-bottom-left-radius 4px
+  border-bottom-right-radius 4px
+  box-shadow 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08)
+  z-index 1
+  .up-arrow
+    background #fff
+    width 12px
+    height 12px
+    transform rotate(45deg)
+    border-top 1px solid #d0d3d5
+    border-left 1px solid #d0d3d5
+    position absolute
+    top -7px
+    right 9px
+    z-index -1
+  .product-section
+    padding-left 16px
+    .title
+      color $textCharcoal
+      font-size 12px
+      font-family 'Lato Bold'
+      margin 8px 0px
+    .products
+      border-left 1px solid #d0d3d5
+      font-size 12px
+      font-family 'Lato Regular'
+      .product
+        color $textGrey
+        background #fff
+        padding 8px
+        transition all 0.15s ease
+        &:hover
+          color #fff
+          background #3d84d6
+
+.fade-in
+  animation fadeInFromNone 0.15s forwards

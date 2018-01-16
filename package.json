@@ -1,0 +1,63 @@
+{
+  "name": "coinbase",
+  "version": "0.0.1",
+  "description": "coinbase code challenge",
+  "main": "index.js",
+  "author": "Nima Mehanian",
+  "license": "MIT",
+  "private": true,
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "scripts": {
+    "cp-index": "cp src/index.html dist",
+    "cp-favicon": "cp src/images/favicon.png dist",
+    "copy": "yarn run cp-index && yarn run cp-favicon && webpack",
+    "prep": "rm -rf dist && mkdir dist && yarn run copy",
+    "start": "yarn run prep && webpack-dev-server --inline",
+    "test": "jest",
+    "test:watch": "yarn run test -- --watch"
+  },
+  "dependencies": {
+    "classnames": "2.2.5",
+    "history": "4.7.2",
+    "lodash": "4.17.4",
+    "prop-types": "15.6.0",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-redux": "5.0.6",
+    "react-router-dom": "4.2.2",
+    "react-router-redux": "5.0.0-alpha.8",
+    "redux": "3.7.2",
+    "redux-observable": "0.17.0",
+    "rxjs": "5.5.2"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-loader": "7.1.2",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
+    "css-loader": "0.28.7",
+    "eslint": "4.12.1",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-react": "7.5.1",
+    "file-loader": "1.1.5",
+    "jest": "21.2.1",
+    "path": "0.12.7",
+    "style-loader": "0.19.0",
+    "stylus": "0.54.5",
+    "stylus-loader": "3.0.1",
+    "url-loader": "0.6.2",
+    "webpack": "3.9.1",
+    "webpack-dev-server": "2.9.5"
+  }
+}

@@ -1,0 +1,23 @@
+truncate(w)
+  width w
+  white-space nowrap
+  overflow hidden
+  text-overflow ellipsis
+
+noSelect =
+  user-select none
+  -webkit-user-select none
+
+.hide
+  display none
+
+@keyframes fadeInFromNone
+  0%
+    display none
+    opacity 0
+  1%
+    display block
+    opacity 0
+  100%
+    display block
+    opacity 1
